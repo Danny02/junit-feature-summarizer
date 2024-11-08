@@ -1,0 +1,24 @@
+[GLOBAL]
+pants_version = "2.24.0.dev3"
+backend_packages = [
+  "pants.backend.experimental.java",
+  "pants.backend.experimental.bsp",
+  "pants.backend.experimental.java.bsp",
+]
+
+[jvm]
+jdk = "temurin:1.11"
+
+[javac]
+args = [
+  "-encoding UTF-8",
+]
+
+[junit]
+version = "5.11.3"
+lockfile = "3rdparty/junit/default.lock"
+
+[source]
+root_patterns = [
+  "/src/*/java",
+]
